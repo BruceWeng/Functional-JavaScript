@@ -23,5 +23,5 @@ function liftf(func) {
 }
 
 var addf = liftf(add);
-print(addf(3)(4));
-print(liftf(mul)(5)(6));
+print(addf(3) (4));
+print(liftf(mul) (5) (6));
