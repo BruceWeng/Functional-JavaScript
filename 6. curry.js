@@ -35,9 +35,19 @@ function curry2(binary, first) {
 // Currying: (Named after Haskell Curry)
 // Taking a function with multiple arguments(add, mul) and turning it into multiple functions
 // that take a single argument is called currying
-function curry(func, ...first) {
-  return function (...second) {
-    return func(...first, ...second);
+function curry(binary) {
+  return function(first) {
+    return function (second) {
+      return binary(first, second);
+    };
+  };
+}
+
+function curryExt(func) {
+  return function (...first) {
+    return function (...second) {
+      return func(...first, ...second);
+    };
   };
 }
 
@@ -57,6 +67,8 @@ var add3 = curry2(add, 3);
 print(add3(4));
 print(curry2(mul, 5) (6));
 
+print(curry(add) (3) (4));
+
 var first = [1, 2, 3];
 var second = [4, 5, 6];
-print(curry(sum, ...first) (...second));
+print(curryExt(sum) (...first) (...second));
