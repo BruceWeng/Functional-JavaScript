@@ -41,6 +41,14 @@ function curry(func, ...first) {
   };
 }
 
+function sum(...numbers) {
+  var result = 0;
+  numbers.forEach(function (number) {
+    result += number;
+  });
+  return result;
+}
+
 var add3 = curry1(add, 3);
 print(add3(4));
 print(curry1(mul, 5) (6));
@@ -48,5 +56,7 @@ print(curry1(mul, 5) (6));
 var add3 = curry2(add, 3);
 print(add3(4));
 print(curry2(mul, 5) (6));
+
 var first = [1, 2, 3];
 var second = [4, 5, 6];
+print(curry(sum, ...first) (...second));
