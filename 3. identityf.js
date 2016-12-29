@@ -7,7 +7,7 @@ function print(input) {
 function identityf(id) {
   return function () {
     return id;
-  }
+  };
 }
 
 var three = identityf(3);
