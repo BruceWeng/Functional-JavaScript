@@ -1,5 +1,5 @@
 // Write a curry function compose that takes two unary functions and returns a unary function that calls them both.
-// 	composeu(doubl) (square) (5) // 50
+// 	compose(doubl) (square) (5) // 50
 function print(input) {
   console.log(input);
 }

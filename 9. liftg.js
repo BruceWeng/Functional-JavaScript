@@ -30,4 +30,4 @@ function liftg(binary) {
 	print(liftg(mul) ()); // undefined
 	print(liftg(mul) (3) ()); // 3
 	print(liftg(mul) (3) (0) (4) ()); // 0
-	print(liftg(mul)(1) (2) (4) (8)()); // 64
+	print(liftg(mul) (1) (2) (4) (8)()); // 64

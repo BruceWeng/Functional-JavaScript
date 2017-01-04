@@ -1,5 +1,5 @@
 // Write a function square that takes two arrays and returns an array with square of each elements.
-// 	square([1, 3, 5],[2, 4, 6])// [1, 9, 25, 4, 16, 36]
+// 	square(...[1, 3, 5],...[2, 4, 6])// [1, 9, 25, 4, 16, 36]
 
 function print(input) {
   console.log(input);

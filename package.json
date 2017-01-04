@@ -1,0 +1,14 @@
+{
+  "name": "javascript-functional-programming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1. identity.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.20.2"
+  }
+}
