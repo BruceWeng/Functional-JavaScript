@@ -17,7 +17,7 @@ function square(...numbers) {
   });
 }
 
-function compose(unary1) {
+function composeII(unary1) {
   return function(unary2) {
     return function (numbers1) {
       return function (numbers2) {
@@ -29,4 +29,4 @@ function compose(unary1) {
 
 var numbers1 = [1, 3, 5];
 var numbers2 = [2, 4, 6];
-print(compose(doubl) (square) (numbers1) (numbers2));
+print(composeII(doubl) (square) (numbers1) (numbers2));
